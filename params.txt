@@ -1,0 +1,45 @@
+%%% Wave Boundary Conditions
+wavemodel           = surfbeat
+wbctype             = jonstable
+bcfile              = jonstable.txt
+
+%%% Wave Directions
+thetamin            = 0
+thetamax            = 360
+thetanaut           = 1
+dtheta              = 10.29
+
+%%% Time Parameters
+tstop               = 378024
+tstart              = 0
+tintm               = 3600
+tintg               = 3600
+dt		    = 0.25
+
+%%% Wave Parameters
+wbcversion          = 3
+break               = 3
+gamma               = 0.7
+alpha               = 0.5
+fw                  = 0.02
+
+%%% Grid Parameters
+nx                  = 81
+ny                  = 0
+vardx               = 1
+xfile               = x.grd
+depfile             = bed.dep
+
+%%% Physical processes
+morphology          = 0
+
+%%% Output Parameters
+nglobalvar          = 8
+zb
+hh
+H
+zs
+urms
+Tbore
+u
+v
